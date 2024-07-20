@@ -1,86 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>FotoBlog</title>
   </head>
   <body>
     <div id="app">
-      <header>
-        <img src="./assets/camera.svg" alt="Câmera" />
-        <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Galeria</a>
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Pesquise por imagens e coleções"
-        />
-        <img src="./assets/avatar.svg" alt="Avatar" />
+      <header class="container">
+        <nav>
+          <img class="logo" src="./assets/camera.svg" alt="Câmera" />
+          <ul>
+            <li>Home</li>
+            <li class="active">Galeria</li>
+          </ul>
+        </nav>
+
+        <form>
+          <div class="input-wrapper">
+            <label for="search">Pesquise por imagens e coleções</label>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Pesquise por imagens e coleções"
+            />
+          </div>
+        </form>
+
+        <img src="./assets/avatar.svg" alt="Avatar" id="avatar" />
       </header>
 
       <main>
-        <h1>Galeria</h1>
-        <div class="galery">
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+        <div class="container">
+          <h1>Galeria</h1>
+          <section class="gallery">
+            <div class="colection">
+              <figure class="item">
+                <img
+                  src="https://images.unsplash.com/photo-1615226751273-707cc117cf4b?q=80&w=1790&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="computador portátil preto e prateado ao lado de fones de ouvido pretos e cinzas"
+                />
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+                <div class="details">
+                  <figcaption>
+                    <h2>Workspace elétrica</h2>
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+            <div class="colection">
+              <figure class="item" style="--delay: 0.6s">
+                <img
+                  src="https://images.unsplash.com/photo-1591693117893-7cbfc0a7ac69?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="teclado de computador preto ao lado do monitor de computador de tela plana preta"
+                />
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+                <div class="details">
+                  <figcaption>
+                    <h2>Dark and red</h2>
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+            <div class="colection">
+              <figure class="item" style="--delay: 0.8s">
+                <img
+                  src="https://images.unsplash.com/photo-1616763355548-1b606f439f86?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="computador portátil preto e cinza na mesa de madeira marrom"
+                />
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+                <div class="details">
+                  <figcaption>
+                    <h2>Organização e grids</h2>
 
-          <div class="colection">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </div>
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <div class="colection">
+              <figure class="item" style="--delay: 1s">
+                <img
+                  src="https://images.unsplash.com/photo-1621743018966-29194999d736?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="monitor de computador de tela plana preta na mesa de madeira marrom"
+                />
+
+                <div class="details">
+                  <figcaption>
+                    <h2>Colméia</h2>
+
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <div class="colection">
+              <figure class="item" style="--delay: 1.2s">
+                <img
+                  src="https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="MacBook Pro ao lado de smartphone e notebook pretos"
+                />
+
+                <div class="details">
+                  <figcaption>
+                    <h2>Setup de escritor</h2>
+
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <div class="colection">
+              <figure class="item" style="--delay: 1.4s">
+                <img
+                  src="https://images.unsplash.com/photo-1628358011826-7f3b8724239f?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="monitor de computador de tela plana preta na mesa de madeira marrom"
+                />
+
+                <div class="details">
+                  <figcaption>
+                    <h2>Ergonomia e cores</h2>
+
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <div class="colection">
+              <figure class="item" style="--delay: 1.6s">
+                <img
+                  src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="monitor de computador de tela plana preta na mesa de madeira marrom"
+                />
+
+                <div class="details">
+                  <figcaption>
+                    <h2>Show de luzes</h2>
+
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <div class="colection">
+              <figure class="item" style="--delay: 1.8s">
+                <img
+                  src="https://images.unsplash.com/photo-1626968361222-291e74711449?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="computador portátil preto e prata na mesa de madeira marrom"
+                />
+
+                <div class="details">
+                  <figcaption>
+                    <h2>Deep purple</h2>
+
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <div class="colection">
+              <figure class="item" style="--delay: 2s">
+                <img
+                  src="https://images.unsplash.com/photo-1634544319848-e4fbf66ed08a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="um monitor de computador sentado em cima de uma mesa"
+                />
+
+                <div class="details">
+                  <figcaption>
+                    <h2>Multi-Screen</h2>
+
+                    <div class="tags">
+                      <span>TAG</span>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </section>
         </div>
       </main>
 
-      <footer>
-        <img src="./assets/copyright.svg" alt="Copyright">
+      <footer class="container">
+        <img src="./assets/copyright.svg" alt="Copyright" />
         <p>2023 - Rocketseat Explorer</p>
       </footer>
     </div>
